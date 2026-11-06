@@ -1,0 +1,15 @@
+## Interface: 120105, 120100, 120001
+## Title: |cff5fe3d0Gebbo's|r |cffffd27fBottomless Bag|r
+## Notes: Big glowing alert for Gebbo's Bottomless Bag pulls: which one, how much Crit/Haste/Mastery/Vers, and a retro reward chime
+## Author: Ryan
+## Version: 2.1.0
+## X-Website: https://github.com/rlucas2100/GebboBagTracker
+## SavedVariables: GebboBagTrackerDB
+## IconTexture: Interface\AddOns\GebboBagTracker\media\voidfin
+## AddonCompartmentFunc: GebboBagTracker_OnAddonCompartmentClick
+
+Data.lua
+Core.lua
+UI.lua
+Engine.lua
+Options.lua
