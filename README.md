@@ -1,12 +1,25 @@
+<div align="center">
+
+<img src="images/Gebbo_banner_1280x720.png" alt="Gebbo's Bottomless Bag: a glowing rainbow JACKPOT! alert showing +157 ALL STATS" width="100%">
+
 # Gebbo's Bottomless Bag
 
 **Know exactly what the bag just handed you.**
 
+[![Latest release](https://img.shields.io/github/v/release/rlucas2100/rlucas2100-GebbosTrinket_World_of_Warcraft?label=release&color=ffd27f&style=for-the-badge)](https://github.com/rlucas2100/rlucas2100-GebbosTrinket_World_of_Warcraft/releases/latest)
+[![World of Warcraft: Midnight](https://img.shields.io/badge/WoW-Midnight%2012.1-5fe3d0?style=for-the-badge)](#install)
+[![Downloads](https://img.shields.io/github/downloads/rlucas2100/rlucas2100-GebbosTrinket_World_of_Warcraft/total?color=b285ff&style=for-the-badge)](https://github.com/rlucas2100/rlucas2100-GebbosTrinket_World_of_Warcraft/releases)
+
+**[Download the latest release](https://github.com/rlucas2100/rlucas2100-GebbosTrinket_World_of_Warcraft/releases/latest)** · **[Report a bug or suggest an idea](https://github.com/rlucas2100/rlucas2100-GebbosTrinket_World_of_Warcraft/issues)**
+
+</div>
+
 A World of Warcraft (Midnight) addon for the **Gebbo's Bottomless Bag** trinket. Every time the bag pulls something out, a big, glowing alert pops up and tells you which pull it is, **how much Critical Strike, Haste, Mastery or Versatility it's giving you (or taking away)**, and how long it lasts. Each pull plays its own retro reward chime.
 
-![Gebbo's Bottomless Bag](images/Gebbo_banner_1280x720.png)
-
-**[Download the latest release](https://github.com/rlucas2100/GebboBagTracker/releases/latest)** · **[Report a bug or suggest an idea](https://github.com/rlucas2100/GebboBagTracker/issues)**
+<p align="center">
+  <img src="images/Gebbo_jackpot.gif" alt="Animated Jackpot alert: entrance pop, rainbow screen flash, numbers counting up, rainbow glow and sparks" width="49%">
+  <img src="images/Gebbo_voidfin.gif" alt="Animated Voidfin alert: wobble, green flash, pulsing sickly-green glow" width="49%">
+</p>
 
 ---
 
@@ -19,6 +32,8 @@ The bag has six possible pulls. Some are great, some fade over time, one climbs,
 - **What it's doing right now**: the Scroll's Mastery counts down as it fades, the Totem counts down your casts, the Seashell's Crit climbs every second
 - **How long it lasts**, with a big countdown on the icon and a draining bar
 - **Your total**, when two pulls overlap: a panel each, plus a TOTAL strip adding up all four stats
+
+![Two pulls at once: a panel each, plus a TOTAL strip](images/Gebbo_stacked_total_1280x720.png)
 
 ## The six pulls
 
@@ -42,9 +57,11 @@ The bag has six possible pulls. Some are great, some fade over time, one climbs,
 - **Original retro reward sounds**: a glittering staircase fanfare for the Jackpot, a short sparkle for the other pulls, and a bubbly sad "aww" for the Voidfin.
 - **Pops up only when a pull is active**, then gets out of your way. Or keep the bag on screen between pulls with `/gbag idle`.
 
+<sub>The images on this page are previews rendered from the addon's own textures, colours and animation timings (`tools/render_previews.py`). In game, the big icon on the left shows the pull's own spell icon and the round badge shows the trinket's icon.</sub>
+
 ## Install
 
-1. Download `GebboBagTracker.zip` from the [latest release](https://github.com/rlucas2100/GebboBagTracker/releases/latest) (or from CurseForge).
+1. Download `GebboBagTracker.zip` from the [latest release](https://github.com/rlucas2100/rlucas2100-GebbosTrinket_World_of_Warcraft/releases/latest) (or from CurseForge).
 2. Copy the `GebboBagTracker` folder into `World of Warcraft/_retail_/Interface/AddOns/`.
 3. Fully restart the game. New sounds and textures don't load on `/reload`.
 4. Type `/gbag test salmon` to see the jackpot alert.
@@ -98,7 +115,7 @@ Everywhere else, the numbers are read straight from your buff and are exact. Est
 
 ## Feedback
 
-Found a bug, or a pull that isn't showing? [Open an issue](https://github.com/rlucas2100/GebboBagTracker/issues) and include what `/gbag status` says. Ideas are welcome too.
+Found a bug, or a pull that isn't showing? [Open an issue](https://github.com/rlucas2100/rlucas2100-GebbosTrinket_World_of_Warcraft/issues) and include what `/gbag status` says. Ideas are welcome too.
 
 ## Credits
 

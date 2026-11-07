@@ -3,7 +3,7 @@
 ## Notes: Big glowing alert for Gebbo's Bottomless Bag pulls: which one, how much Crit/Haste/Mastery/Vers, and a retro reward chime
 ## Author: Ryan
 ## Version: 2.1.0
-## X-Website: https://github.com/rlucas2100/GebboBagTracker
+## X-Website: https://github.com/rlucas2100/rlucas2100-GebbosTrinket_World_of_Warcraft
 ## SavedVariables: GebboBagTrackerDB
 ## IconTexture: Interface\AddOns\GebboBagTracker\media\voidfin
 ## AddonCompartmentFunc: GebboBagTracker_OnAddonCompartmentClick
