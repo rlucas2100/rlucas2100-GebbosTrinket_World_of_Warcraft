@@ -129,4 +129,4 @@ Found a bug, or a pull that isn't showing? [Open an issue](https://github.com/rl
 
 ## Credits
 
-Made by **Ryan** ([rlucas2100](https://github.com/rlucas2100)). Sounds and cartoon art are original, made for this addon. Built with love for the bag, the fish, and especially the Voidfin.
+Made by **Orion** contact in-game: Renegade-Twisting-Nether ([rlucas2100](https://github.com/rlucas2100)). Sounds and cartoon art are original, made for this addon. Built with love for the bag, the fish, and especially the Voidfin.
