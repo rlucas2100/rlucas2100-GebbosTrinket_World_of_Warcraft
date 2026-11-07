@@ -111,16 +111,25 @@ There is no automated test suite; testing happens in game. Useful commands:
 
 New or changed files in `media/` (textures, sounds) only load after a **full client restart**, not `/reload`. Lua changes do load on `/reload`.
 
-## Preview images
+## README images (`images/`)
 
-`tools/render_previews.py` (Python 3 + Pillow) recreates the alert panel from `UI.lua`'s geometry, colours and animation formulas using the real `media/*.tga` textures. It writes the README art to `images/`:
-- `Gebbo_banner_1280x720.png`
-- `Gebbo_six_pulls_1280x720.png`
-- `Gebbo_stacked_total_1280x720.png`
-- `Gebbo_jackpot.gif`
-- `Gebbo_voidfin.gif`
+**Real in-game screenshots** (prefer these; replace them when the look changes):
+- `Gebbo_banner_ingame.png`: the hero banner, built around a stack of three game-drawn alerts cropped from a Mythic+ screenshot.
+- `Gebbo_mythicplus_ingame.jpg`: the full Mythic+ screenshot. The chat window is blurred because it showed other players' and friends' names.
+- `Gebbo_stack_ingame.png`: the three-alert stack crop.
+- `Gebbo_six_pulls_ingame.png`: one real panel per pull on a dark backdrop. The Versatility panel is upscaled from the Mythic+ crop because there was no single shot of it.
 
-Run it from the repo root: `python tools/render_previews.py` (optional arguments: `<media> <out> banner|six|stack|gif`). The pull icons and bag badge are original cartoon stand-ins drawn in the script, because in game those slots show Blizzard's spell and item icons, which must not be committed. If you change the panel layout or theme colours, update the script's constants (`ARTS`, the geometry) and re-render.
+**Rendered previews**, made with `tools/render_previews.py` (Python 3 + Pillow):
+- `Gebbo_jackpot.gif` and `Gebbo_voidfin.gif`: animated, because the game can't capture these.
+- `Gebbo_stacked_total_1280x720.png`: the TOTAL strip, which only appears on the addon-drawn path, so the Mythic+ shot doesn't show it.
+
+How the script works:
+- It recreates the alert panel from `UI.lua`'s geometry, colours and animation formulas, using the real `media/*.tga` textures.
+- Run it from the repo root: `python tools/render_previews.py` renders stack and gif. Optional arguments: `<media> <out> banner|six|stack|gif`.
+- The pull icons and bag badge are original cartoon stand-ins drawn in the script, because in game those slots show Blizzard's spell and item icons. Don't commit ripped icons.
+- If you change the panel layout or theme colours, update the script's constants (`ARTS`, the geometry) and re-render.
+
+The README's small print says which images are real and which are rendered. Keep it accurate.
 
 ## Conventions
 

@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="images/Gebbo_banner_1280x720.png" alt="Gebbo's Bottomless Bag: a glowing rainbow JACKPOT! alert showing +157 ALL STATS" width="100%">
+<img src="images/Gebbo_banner_ingame.png" alt="Gebbo's Bottomless Bag: three glowing alerts stacked in game (Haste Rush, Versatility, Jackpot!)" width="100%">
 
 # Gebbo's Bottomless Bag
 
@@ -20,6 +20,12 @@ A World of Warcraft (Midnight) addon for the **Gebbo's Bottomless Bag** trinket.
   <img src="images/Gebbo_jackpot.gif" alt="Animated Jackpot alert: entrance pop, rainbow screen flash, numbers counting up, rainbow glow and sparks" width="49%">
   <img src="images/Gebbo_voidfin.gif" alt="Animated Voidfin alert: wobble, green flash, pulsing sickly-green glow" width="49%">
 </p>
+
+## See it in game
+
+![Gebbo's Bottomless Bag in a Mythic+ key: Haste Rush, Versatility and Jackpot alerts stacked at the top left](images/Gebbo_mythicplus_ingame.jpg)
+
+<sub>Mythic+ (Altar of Fangs): three pulls up at once, top left. Inside keys the game draws the alert and the amounts are item-level estimates, marked with `~`.</sub>
 
 ---
 
@@ -46,7 +52,7 @@ The bag has six possible pulls. Some are great, some fade over time, one climbs,
 | **Seriously Sharp Seashell** | Crit that climbs each second (but it cuts you) | **CRIT CLIMB** in red; the number climbs live |
 | **Rotting Voidfin** | All secondary stats down | **EW. VOIDFIN**: sickly green panel, wobble, green flash, a sad "aww" |
 
-![Six pulls, six looks](images/Gebbo_six_pulls_1280x720.png)
+![Six pulls, six looks: in-game screenshots of every alert](images/Gebbo_six_pulls_ingame.png)
 
 ## The look and the sound
 
@@ -57,7 +63,7 @@ The bag has six possible pulls. Some are great, some fade over time, one climbs,
 - **Original retro reward sounds**: a glittering staircase fanfare for the Jackpot, a short sparkle for the other pulls, and a bubbly sad "aww" for the Voidfin.
 - **Pops up only when a pull is active**, then gets out of your way. Or keep the bag on screen between pulls with `/gbag idle`.
 
-<sub>The images on this page are previews rendered from the addon's own textures, colours and animation timings (`tools/render_previews.py`). In game, the big icon on the left shows the pull's own spell icon and the round badge shows the trinket's icon.</sub>
+<sub>The banner, the Mythic+ shot and the six-pulls grid are real in-game screenshots. The two animations and the TOTAL-strip picture are previews rendered from the addon's own textures, colours and animation timings (`tools/render_previews.py`), with stand-in art where the game shows the pull's spell icon and the trinket's icon.</sub>
 
 ## Install
 
@@ -103,7 +109,11 @@ The settings window (`/gbag config`, the addon button by the minimap, or **Optio
 
 In Midnight, the game hides buff details from addons inside raids, boss fights and Mythic+. In those places Gebbo's Bottomless Bag switches to a **game-drawn alert**: the game itself finds the pull and draws the panel, timer and bar, so they're always exact. The stat amount there is an **estimate for your item level**, marked with `~`. The pull sounds still play, because they're handed to the game's own aura-sound system.
 
+<img src="images/Gebbo_stack_ingame.png" alt="Game-drawn alerts inside a Mythic+ key, with estimated amounts marked ~" align="right" width="306">
+
 Everywhere else, the numbers are read straight from your buff and are exact. Estimates (`~`) calibrate themselves the first time a Salmon, Gralstone or Voidfin lands in the open world.
+
+<br clear="right">
 
 ## FAQ
 

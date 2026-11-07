@@ -8,7 +8,7 @@ slots show Blizzard's spell/item icons.
 Needs Pillow (pip install pillow). Not part of the addon; WoW never loads it.
 
 usage (from the repo root):
-  python tools/render_previews.py                     # everything
+  python tools/render_previews.py                     # the README previews (stack + gif)
   python tools/render_previews.py media images banner # just one: banner | six | stack | gif
 """
 import math, os, sys, random
@@ -764,7 +764,9 @@ def animated(key, fname, seconds, fps, scale, amount, flash):
 
 
 if __name__ == "__main__":
-    which = sys.argv[3:] or ["banner", "six", "stack", "gif"]
+    # the README uses real screenshots for the banner and six-pulls grid; banner/six are
+    # still available on request for a quick visual check of layout changes
+    which = sys.argv[3:] or ["stack", "gif"]
     if "banner" in which: banner()
     if "six" in which: six_pulls()
     if "stack" in which: stacked()
